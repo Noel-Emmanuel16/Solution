@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Solution</title>
+  </head>
+  <body>
+    <h1>Solution</h1>
+    <div class="intro">
+      <p>✅Dark mode</p>
+      <p>✅Nice UI</p>
+      <p>✅Easy to use</p>
+    </div>
+    <form class="calculator" name="calc">
+      <div class="input-box">
+        <input
+          type="text"
+          placeholder="0"
+          name="txt"
+          class="display"
+          readonly
+        />
+      </div>
+      <div class="calculator-keys">
+        <span
+          onclick="document.calc.txt.value  =''"
+          class="clear-btn"
+          data-action="clear"
+          >C</span
+        >
+        <span
+          onclick="document.calc.txt.value +='&divide;'"
+          class="operator-key"
+          >&divide;</span
+        >
+        <span onclick="document.calc.txt.value +='&times;'" class="operator-key"
+          >&times;</span
+        >
+        <span onclick="document.calc.txt.value +='7'">7</span>
+        <span onclick="document.calc.txt.value +='8'">8</span>
+        <span onclick="document.calc.txt.value +='9'">9</span>
+        <span onclick="document.calc.txt.value +='&plus;'" class="operator-key"
+          >&plus;</span
+        >
+        <span onclick="document.calc.txt.value +='4'">4</span>
+        <span onclick="document.calc.txt.value +='5'">5</span>
+        <span onclick="document.calc.txt.value +='6'">6</span>
+        <span onclick="document.calc.txt.value +='&minus;'" class="operator-key"
+          >&minus;</span
+        >
+        <span onclick="document.calc.txt.value +='1'">1</span>
+        <span onclick="document.calc.txt.value +='2'">2</span>
+        <span onclick="document.calc.txt.value +='3'">3</span>
+        <span
+          onclick="document.calc.txt.value = eval(calc.txt.value)"
+          class="answer-key"
+          >&equals;</span>
+        <span onclick="document.calc.txt.value +='0'">0</span>
+        <span onclick="document.calc.txt.value +='00'">00</span>
+        <span onclick="document.calc.txt.value +='.'">.</span>
+      </div>
+    </form>
+  </body>
+</html>
